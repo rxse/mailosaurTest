@@ -6,14 +6,5 @@
   "targetFramework": "Selenium",
   "targetLanguage": "java",
   "testFolder": "src/test/java/uitest/tests",
-  "version": "1.8.0",
-  "jiraConnection": {
-    "host": "samozakolezu.atlassian.net",
-    "issueType": "Task",
-    "projectKey": "WEB",
-    "protocol": "https",
-    "statusCompletedName": "Done",
-    "statusToDoName": "To Do",
-    "strictSSL": false
-  }
+  "version": "1.8.0"
 }
