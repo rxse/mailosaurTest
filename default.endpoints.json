@@ -1,3 +1,7 @@
 {
-  "endpoints": []
+  "endpoints": [],
+  "environment": {
+    "mailosaurAPIKey": "YOUR-API-KEY",
+    "mailosaurServerID": "YOUR-SERVER-ID"
+  }
 }

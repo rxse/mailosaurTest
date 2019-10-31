@@ -33,8 +33,8 @@ public class RegistrationPo {
     private MailosaurClient mailosaurClient;
 
     // Enter your mailosaur API and ServerID below:
-    private String mailosaurAPIKey = "YOUR-API-KEY";
-    private String mailosaurServerID = "YOUR-SERVER-ID";
+    private String mailosaurAPIKey = System.getenv("mailosaurAPIKey");
+    private String mailosaurServerID = System.getenv("mailosaurServerID");
 
     public RegistrationPo(WebDriver driver) {
         this.driver = driver;
