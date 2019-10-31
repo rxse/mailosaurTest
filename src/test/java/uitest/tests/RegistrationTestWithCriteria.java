@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 import uitest.TestNgTestBase;
 import uitest.pageobjects.RegistrationPo;
 
-class RegistrationTest extends TestNgTestBase {
+class RegistrationTestWithCriteria extends TestNgTestBase {
     @Test
-    public void emailTest() throws  IOException, MailosaurException {
+    public void emailTest() throws IOException, MailosaurException {
         /*
          * Lets imagine the scenario where we have to test our registration form, or
          * more exactly the email that has been sent out to the user that registered for
@@ -34,11 +34,12 @@ class RegistrationTest extends TestNgTestBase {
 
         // Use the generated email to fill out the registration form
         home.typeIntoEmail(myRandomEmail).clickSubmit();
-       
+
         // Confirm successful subscription
         Assert.assertEquals(home.getSubscriptionSuccessTextText(), "Thank you for subscribing!");
 
-        // Get the confirmation link from the last recieved email that matches your search criteria 
+        // Get the confirmation link from the last recieved email that matches your
+        // search criteria
         String linkText = home.getLinkTextWithCriteria();
 
         // Assert that the link points to the right address

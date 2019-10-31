@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 import uitest.TestNgTestBase;
 import uitest.pageobjects.RegistrationPo;
 
-class RegistrationTestWithCriteria extends TestNgTestBase {
+class RegistrationTest extends TestNgTestBase {
     @Test
-    public void RegisrationTest() throws IOException, MailosaurException {
+    public void testRegistration() throws IOException, MailosaurException {
         WebDriver driver = getDriver();
         /*
          * Lets imagine the scenario where we have to test our registration form, or
@@ -33,8 +33,7 @@ class RegistrationTestWithCriteria extends TestNgTestBase {
 
         // Use the generated email to fill out the registration form
         home.typeIntoEmail(myRandomEmail).clickSubmit();
-        
-       
+
         // Confirm successful subscription
         Assert.assertEquals(home.getSubscriptionSuccessTextText(), "Thank you for subscribing!");
 
