@@ -1,0 +1,19 @@
+{
+  "defaultTestName": "newTest",
+  "pageObjectFolder": "src/test/java/uitest/pageobjects",
+  "projectName": "mailtest",
+  "rootPackage": "uitest",
+  "targetFramework": "Selenium",
+  "targetLanguage": "java",
+  "testFolder": "src/test/java/uitest/tests",
+  "version": "1.8.0",
+  "jiraConnection": {
+    "host": "samozakolezu.atlassian.net",
+    "issueType": "Task",
+    "projectKey": "WEB",
+    "protocol": "https",
+    "statusCompletedName": "Done",
+    "statusToDoName": "To Do",
+    "strictSSL": false
+  }
+}

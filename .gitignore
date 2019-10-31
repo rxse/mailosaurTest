@@ -1,0 +1,9 @@
+.settings/
+.classpath
+.project
+.webtestit/
+reports/
+target/
+temp-reports/
+**/*.DS_Store
+*.DS_Store
